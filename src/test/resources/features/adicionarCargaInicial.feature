@@ -7,6 +7,7 @@ Feature: Adicionar projeto inicial
     And informo a senha 'root'
     When clico em entrar
     And preencho a senha antiga 'root' e a nova senha 'vent' se for solicitado
+    And informo o usuario novamente caso tenha mudado a senha 'administrator'
     And informo a senha 'vent'
     When clico em entrar
     Then o usuário deve ser autenticado com sucesso
@@ -28,7 +29,6 @@ Feature: Adicionar projeto inicial
     When seleciono o usuario 'administrator' na atribuição da Categoria Global
     And Atualizo a Categoria Global
     Then sistema retorna mensagem 'Operação realizada com sucesso.' para excluir conta
-
 
 
   Scenario: Tornar projeto inicial o padrao

@@ -5,6 +5,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
@@ -97,8 +98,9 @@ public class GerenciarUsuariosStepDefinitions {
     @Then("preencho a senha antiga '(.*)' e a nova senha '(.*)' se for solicitado")
     public void retornarMensagemApagarContaDeUsuario( String velha, String nova) {
 
-        //Assert.assertEquals("Alterar Conta",minhaContaSteps.retornarAlterarConta());
         if (minhaContaSteps.retornarAlterarConta().equals("Alterar Conta")) {
+
+            Serenity.setSessionVariable("mudou").to(true);
 
             gerenciarUsuariosSteps.preencherVelhaSenha(velha);
             gerenciarUsuariosSteps.preencherNovaSenha(nova);
@@ -108,9 +110,20 @@ public class GerenciarUsuariosStepDefinitions {
 
 
         } else {
+            Serenity.setSessionVariable("mudou").to(false);
             loginSteps.clicarEmLogin();
         }
     }
+
+    @And("informo o usuario novamente caso tenha mudado a senha '(.*)'")
+    public void informarUsuarioNovamente( String usuario ) {
+        if(Serenity.sessionVariableCalled("mudou").equals(true)){
+            loginSteps.preenhcerUsuario(usuario);
+            loginSteps.clicarEmLogin();
+        }
+
+    }
+
 
 
     @Then("seleciono o usuario '(.*)' na tela de Gerenciar Usuarios")

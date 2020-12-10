@@ -59,4 +59,42 @@ public class VerTarefasSteps {
         verTarefasPage.clicarEmFecharTarefa();
     }
 
+
+
+
+
+
+
+    @Step("Ver tarefas: selecionar Resolucao")
+    public void selecionarResolucao(String resolucao ){
+        verTarefasPage.selecionarResolucao(resolucao);
+    }
+    @Step("Ver tarefas: preencher Num Duplicado")
+    public void preencherNumDuplicado( String numDuplicado){
+        verTarefasPage.preencherNumDuplicado(numDuplicado);
+    }
+    @Step("Ver tarefas: Selecionar Atribuicao")
+    public void SelecionarAtribuicao(String atribuicao ){
+        verTarefasPage.SelecionarAtribuicao(atribuicao);
+    }
+    @Step("Ver tarefas: clicar Em Visibilidade Privado")
+    public void clicarEmVisibilidadePrivado( ){
+        verTarefasPage.clicarEmVisibilidadePrivado();
+    }
+    @Step("Ver tarefas: preencher Anotacao")
+    public void preencherAnotacao(String anotacao ){
+        verTarefasPage.preencherAnotacao(anotacao);
+    }
+
+
+    @Step("Ver tarefas: clicar Em Confirmar Fechar Tarefa")
+    public void clicarEmConfirmarFecharTarefa( ){
+        verTarefasPage.clicarEmConfirmarFecharTarefa();
+    }
+    @Step("Ver tarefas: retornar Estado da tarefa")
+    public String retornarEstado( ){
+        return verTarefasPage.retornarEstado();
+    }
+
+
 }

@@ -31,4 +31,24 @@ public class LoginSteps {
     public String retornaMensagemDeErro(){
         return loginPage.retornaMensagemDeErro();
     }
+
+
+
+
+    @Step("Preencher usuário com '{0}'")
+    public void preencherUsuarioJavaScript(String usuario){
+        loginPage.preencherUsuarioJavaScript(usuario);
+    }
+
+    @Step("Preencher senha com '[0}'")
+    public void preencherSenhaJavaScript(String senha){
+        loginPage.preencherSenhaJavaScript(senha);
+    }
+
+    @Step("Clicar em 'Login'")
+    public void clicarEmLoginJavaScript(){
+        loginPage.clicarEmLoginJavaScript();
+    }
+
+
 }

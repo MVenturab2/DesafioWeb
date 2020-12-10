@@ -1,6 +1,15 @@
 Feature: Criar Categorias Globais
 
 
+  Scenario: Crio uma nova categoria global
+    Given que estou logado como administrador no sistema
+    When clico em 'gerenciar'
+    And clico em gerenciar 'projetos'
+    And preencho o nome da categoria global 'Aleatorio'
+    And clico em adicionar Categoria Global
+    Then O sistema retorna a tela de gerenciar 'Projetos'
+
+
   Scenario: Crio e edito uma nova categoria global em um projeto em edição
     Given que estou logado como administrador no sistema
     When clico em 'gerenciar'
@@ -18,30 +27,13 @@ Feature: Criar Categorias Globais
     Then sistema retorna mensagem 'Operação realizada com sucesso.' para excluir conta
 
 
-  Scenario: Apagar categoria global
+  Scenario: crio categoria global pelo botao adicionar e editar
     Given que estou logado como administrador no sistema
     When clico em 'gerenciar'
     And clico em gerenciar 'projetos'
     And preencho o nome da categoria global 'Aleatorio'
     And clico em adicionar e Editar Categoria Global
     Then Sistema vai para tela de alteração da Categoria Global
-
-
-  Scenario: Crio uma nova categoria global
-    Given que estou logado como administrador no sistema
-    When clico em 'gerenciar'
-    And clico em gerenciar 'projetos'
-    And preencho o nome da categoria global 'Aleatorio'
-    And clico em adicionar Categoria Global
-
-
-  Scenario: Crio uma  categoria global repetida
-    Given que estou logado como administrador no sistema
-    When clico em 'gerenciar'
-    And clico em gerenciar 'projetos'
-    And preencho o nome da categoria global 'Repetido'
-    And clico em adicionar Categoria Global
-    Then Sistema apresenta mensagem de erro ao criar Categoria devido 'Uma categoria com este nome já existe.'
 
 
   Scenario: Apagar categoria global

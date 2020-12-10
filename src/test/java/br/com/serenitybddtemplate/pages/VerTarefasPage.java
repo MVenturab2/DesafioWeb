@@ -38,6 +38,21 @@ public class VerTarefasPage extends PageBase {
 
     By fecharTarefaButton = By.xpath("//input[@value='Fechar']");
 
+    By confirmarFecharTarefaButton = By.xpath("//input[@value='Fechar Tarefa']");
+
+    By estadoDaTarefaTextArea = By.cssSelector("td.bug-status");
+
+
+    By resolucaoCombobox = By.name("resolution");
+    By numDuplicadoField = By.name("duplicate_id");
+    By atribuicaoCombobox = By.name("handler_id");
+    By visibilidadePrivadoCheckbox = By.id("bugnote_add_view_status");
+    By anotacaoField = By.id("bugnote_text");
+
+
+
+
+
 
 
     //Actions
@@ -92,6 +107,40 @@ public class VerTarefasPage extends PageBase {
         click(fecharTarefaButton);
     }
 
+
+
+
+
+
+
+    public void selecionarResolucao(String resolucao ){
+        comboBoxSelectByVisibleText(resolucaoCombobox,resolucao);
+    }
+
+    public void preencherNumDuplicado(String numDuplicado){
+        sendKeys(numDuplicadoField,numDuplicado);
+    }
+
+    public void SelecionarAtribuicao( String atribuicao){
+        comboBoxSelectByVisibleText(atribuicaoCombobox,atribuicao);
+    }
+
+    public void clicarEmVisibilidadePrivado( ){
+        click(visibilidadePrivadoCheckbox);
+    }
+
+    public void preencherAnotacao(String anotacao ){
+        sendKeys(anotacaoField,anotacao);
+    }
+
+
+
+    public void clicarEmConfirmarFecharTarefa(){
+        click(confirmarFecharTarefaButton);
+    }
+    public String retornarEstado(){
+        return getText(estadoDaTarefaTextArea);
+    }
 
 
 }

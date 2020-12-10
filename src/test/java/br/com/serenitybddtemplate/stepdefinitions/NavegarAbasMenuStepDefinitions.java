@@ -1,6 +1,7 @@
 package br.com.serenitybddtemplate.stepdefinitions;
 
 import br.com.serenitybddtemplate.dbsteps.LimpaBaseDBSteps;
+import br.com.serenitybddtemplate.flows.retornaElementosFlows;
 import br.com.serenitybddtemplate.steps.CriarTarefaSteps;
 import br.com.serenitybddtemplate.steps.GerenciarSteps;
 import br.com.serenitybddtemplate.steps.MainSteps;
@@ -13,6 +14,7 @@ import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
+
 
 import java.util.List;
 import java.util.Map;
@@ -30,6 +32,10 @@ public class NavegarAbasMenuStepDefinitions {
 
     @Steps
     LimpaBaseDBSteps limpaBaseDBSteps;
+
+    @Steps
+    retornaElementosFlows retornaElementosFlows;
+
 
     @When("clico em '(.*)'")
     public void clicarEmUmaAba(String tela) {
@@ -60,23 +66,23 @@ public class NavegarAbasMenuStepDefinitions {
     }
 
 
-    @Then("O sistema retorna a tela com '(.*)'")
-    public void retornaTituloPage(String retornoTela){
+    @Then("O sistema retorna a tela solicitada")
+    public void retornaTituloPage( ){
         String tela = Serenity.sessionVariableCalled("tela");
         switch(tela){
-            case "Minha Visão": Assert.assertEquals(retornoTela, mainSteps.retornaatribuidosAMim());
+            case "Minha Visão": retornaElementosFlows.retornaElementosMinhaVisao();
                 break;
-            case "Ver Tarefas": Assert.assertEquals(retornoTela, mainSteps.retornaFiltros());
+            case "Ver Tarefas": retornaElementosFlows.retornaElementosFiltro();
                 break;
-            case "Criar Tarefa": Assert.assertEquals(retornoTela, mainSteps.retornaDetalhesFormularioTarefa());
+            case "Criar Tarefa": retornaElementosFlows.retornaElementosCriarTarefa();
                 break;
-            case "Registro de Mudanças": Assert.assertEquals(retornoTela, mainSteps.retornaRegistroMudancas());
+            case "Registro de Mudanças": retornaElementosFlows.retornaElementosRegistroMudancas();
                 break;
-            case "planejamento": Assert.assertEquals(retornoTela, mainSteps.retornaPlanejamento());
+            case "planejamento": retornaElementosFlows.retornaElementosPlanejamento();
                 break;
-            case "resumo": Assert.assertEquals(retornoTela, mainSteps.retornaResumo());
+            case "resumo": retornaElementosFlows.retornaElementosResumo();
                 break;
-            case "gerenciar": Assert.assertEquals(retornoTela, gerenciarSteps.retornaVisaoGeral());
+            case "gerenciar": retornaElementosFlows.retornaElementosGerenciar();
                 break;
         }
     }
@@ -110,25 +116,25 @@ public class NavegarAbasMenuStepDefinitions {
 
 
 
-    @When("O sistema retorna a tela de gerenciar '(.*)'")
-    public void retornoTelaGerenciar(String retornoAbaGerenciar) {
+    @When("O sistema retorna a tela de gerenciar solicitada")
+    public void retornoTelaGerenciar() {
         String telaGerenciar = Serenity.sessionVariableCalled("telaGerenciar");
         switch(telaGerenciar){
-            case "Info Do Site": Assert.assertTrue(gerenciarSteps.retornaVisaoGeral().contains(retornoAbaGerenciar));
+            case "Info Do Site": retornaElementosFlows.retornaElementosGerenciarInfoSite();
                 break;
-            case "usuarios": Assert.assertTrue(gerenciarSteps.retornaGerenciarUsuarios().contains(retornoAbaGerenciar) );
+            case "usuarios": retornaElementosFlows.retornaElementosGerenciarUsuarios();
                 break;
-            case "projetos": Assert.assertTrue(gerenciarSteps.retornaGerenciarProjetos().contains(retornoAbaGerenciar));
+            case "projetos": retornaElementosFlows.retornaElementosGerenciarProjetos();
                 break;
-            case "Marcadores": Assert.assertTrue(gerenciarSteps.retornaGerenciarMarcadores().contains( retornoAbaGerenciar));
+            case "Marcadores": retornaElementosFlows.retornaElementosGerenciarMarcadores();
                 break;
-            case "Campos Personalizados": Assert.assertTrue(gerenciarSteps.retornaGerenciarcamposPersonalizados().contains( retornoAbaGerenciar) );
+            case "Campos Personalizados": retornaElementosFlows.retornaElementosGerenciarCamposPersonalizados();
                 break;
-            case "Perfís Globais": Assert.assertTrue(gerenciarSteps.retornaGerenciarperfisGlobais().contains(retornoAbaGerenciar) );
+            case "Perfís Globais": retornaElementosFlows.retornaElementosGerenciarPerfisGlobais();
                 break;
-            case "Plugins": Assert.assertTrue(gerenciarSteps.retornaGerenciarplugins().contains( retornoAbaGerenciar) );
+            case "Plugins": retornaElementosFlows.retornaElementosGerenciarPlugins();
                 break;
-            case "Configuração": Assert.assertTrue(gerenciarSteps.retornaGerenciarconfiguracao().contains(retornoAbaGerenciar) );
+            case "Configuração": retornaElementosFlows.retornaElementosGerenciarConfiguracao();
                 break;
         }
     }

@@ -155,14 +155,26 @@ public class criarTarefaStepDefinitions {
 
     @And("^clico em fechar tarefa$")
     public void clicarEmFecharTarefa( ) {
-
         verTarefasSteps.clicarEmFecharTarefa();
-
-
     }
 
 
-
+    @And("prencho os detalhes para fechar tarefa:")
+    public void preencherDetalhesFecharTarefa(DataTable informacao) {
+        List<Map<String, String>> data = informacao.asMaps(String.class, String.class);
+        verTarefasSteps.selecionarResolucao(data.get(0).get("Resolução"));
+        verTarefasSteps.preencherNumDuplicado(data.get(0).get("Núm Duplicado"));
+        verTarefasSteps.SelecionarAtribuicao(data.get(0).get("Atribuído"));
+        if(data.get(0).get("Visibilidade").equals("Privado")) {
+            verTarefasSteps.clicarEmVisibilidadePrivado();
+        }
+        verTarefasSteps.preencherAnotacao(data.get(0).get("Adicionar Anotação"));
+        verTarefasSteps.clicarEmConfirmarFecharTarefa();
+    }
+    @And("^O sistema apresenta o estado da tarefa como '(.*)'$")
+    public void sistemaRetornaTarefaFechada( String estado) {
+        Assert.assertEquals(estado ,verTarefasSteps.retornarEstado());
+    }
 
 
 }

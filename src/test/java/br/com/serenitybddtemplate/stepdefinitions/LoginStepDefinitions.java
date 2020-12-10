@@ -47,7 +47,21 @@ public class LoginStepDefinitions {
     }
 
 
+    @Given("informo o usuario utilizando javascript '(.*)'")
+    public void preencherUsuarioJavaScript(String usuario){
+        Serenity.setSessionVariable("usuario").to(usuario);
+        loginSteps.preencherUsuarioJavaScript(usuario);
+    }
 
+    @When("clico utilizando javascript em entrar")
+    public void clicarEmLoginJavaScript(){
+        loginSteps.clicarEmLoginJavaScript();
+    }
+
+    @And("informo a senha utilizando javascript '(.*)'")
+    public void preencherSenhaJavaScript(String senha){
+        loginSteps.preencherSenhaJavaScript(senha);
+    }
 
 
 }

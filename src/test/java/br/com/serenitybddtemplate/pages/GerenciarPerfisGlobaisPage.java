@@ -1,7 +1,6 @@
 package br.com.serenitybddtemplate.pages;
 
 import br.com.serenitybddtemplate.bases.PageBase;
-import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

@@ -49,9 +49,7 @@ public class GerenciarProjetosStepDefinitions {
             nomeProjeto = "Projeto " + gerarNumeros();
         }else if(data.get(0).get("Nome Projeto").equals("subprojeto")) {
             nomeProjeto = "SubProj " + gerarNumeros();
-        }//else if (data.get(0).get("Nome Projeto").equals("edit")){
-        //    nomeProjeto = data.get(0).get("Nome Projeto");
-        //}
+        }
         else{
             nomeProjeto = data.get(0).get("Nome Projeto");
         }

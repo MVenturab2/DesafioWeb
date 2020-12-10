@@ -35,4 +35,21 @@ public class LoginPage extends PageBase {
     public String retornaMensagemDeErro(){
         return getText(mensagemErroTextArea);
     }
+
+
+
+
+    public void preencherUsuarioJavaScript(String usuario){
+        sendKeysJavaScript(usernameField, usuario);
+    }
+
+    public void preencherSenhaJavaScript(String senha){
+        sendKeysJavaScript(passwordField, senha);
+    }
+
+    public void clicarEmLoginJavaScript(){
+        clickJavaScript(entrarButton);
+    }
+
+
 }

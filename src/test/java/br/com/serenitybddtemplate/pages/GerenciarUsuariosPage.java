@@ -4,7 +4,6 @@ import br.com.serenitybddtemplate.bases.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static javafx.beans.binding.Bindings.select;
 
 public class GerenciarUsuariosPage extends PageBase {
 
@@ -16,7 +15,7 @@ public class GerenciarUsuariosPage extends PageBase {
 
 
     //menus
-    //By criarMarcadorButton = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/a");
+
 
     By criarNovaContaButton = By.linkText("Criar nova conta");
 

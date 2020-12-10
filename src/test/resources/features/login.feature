@@ -1,5 +1,16 @@
 Feature: Login
 
+
+
+  @login
+  Scenario: Efetuar login com sucesso utilizando javascript
+    Given informo o usuario utilizando javascript 'administrator'
+    And clico utilizando javascript em entrar
+    And informo a senha utilizando javascript 'vent'
+    When clico utilizando javascript em entrar
+    Then o usuário deve ser autenticado com sucesso
+
+
   @login
   Scenario: Efetuar login com sucesso
     Given informo o usuario 'administrator'

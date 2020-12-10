@@ -52,3 +52,7 @@ Feature: Criar nova tarefa
       | categ inicial | sempre     | pequeno   | normal     | Sim               | plat teste | win | 10        | administrator | Tarefa de teste para apagar | Descricao de tarefa de teste automatizado | clicar e preencher | outro teste            | .                  | Nao   | publico      |
     Then Sistema retorna mensagem de tarefa criada com 'Operação realizada com sucesso.'
     When clico em fechar tarefa
+    And prencho os detalhes para fechar tarefa:
+    | Resolução | Núm Duplicado | Atribuído     | Visibilidade | Adicionar Anotação               |
+    | corrigido |               | administrator | publico      | comentarios de teste para anotar |
+    Then O sistema apresenta o estado da tarefa como 'fechado'
