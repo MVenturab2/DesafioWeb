@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Template</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="2a7274e98cdcf3649e30518004f762a35b872f2f42a8eccd84423fbb2b102bca.html">Criar Novo Usuario</a></span>
+                > <span class="truncate-60"><a
+                    href="274b2b1e30d810efe25aa176e77007bd369b9db919eebeeb02e10fecae4129c3.html">Crio um novo usuario pelo gerenciar usuarios </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-12-2020 17:37</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Criar Novo Usuario </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Crio um novo usuario pelo gerenciar usuarios
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="20751074aa616d8ca32771653149891b111e8474db230b8c59b587eca783e230.png" title=" Abrir Mantis" width="1920"/>
+                <img src="f253a7bf9b1dbe68897d229ece9f30eed6040e767175ee6ad7d5b4a098b02cef.png" title=" Preencher usu&aacute;rio com 'administrator'" width="1920"/>
+                <img src="3a2498f18daea4991195fc522036a7a7fcf99153bb5493a9ebb867ee499a26ca.png" title=" Clicar em 'Login'" width="1920"/>
+                <img src="6653342e027a26d83a6bdb40034c4a3699f9e894bcd1ef855f4cbc5175ef1fb6.png" title=" Preencher senha com '[0}'" width="1920"/>
+                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Clicar em 'Login'" width="1920"/>
+                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Given que estou logado como administrador no sistema" width="1920"/>
+                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Retorna username das informa&ccedil;&otilde;es de login" width="1920"/>
+                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Given que estou logado como administrador no sistema (completed)" width="1920"/>
+                <img src="25ee4b24bfd6663806f96b9957d7d85183028e12808080492e2b17cd57c183c2.png" title=" When clico em 'gerenciar'" width="1920"/>
+                <img src="25ee4b24bfd6663806f96b9957d7d85183028e12808080492e2b17cd57c183c2.png" title=" main: Clicar Em Gerenciar" width="1920"/>
+                <img src="25ee4b24bfd6663806f96b9957d7d85183028e12808080492e2b17cd57c183c2.png" title=" When clico em 'gerenciar' (completed)" width="1920"/>
+                <img src="70e447484941c40313795852700093193df4646755ca5ecfe0d286c1407f06f1.png" title=" And clico em gerenciar 'Usu&aacute;rios'" width="1920"/>
+                <img src="70e447484941c40313795852700093193df4646755ca5ecfe0d286c1407f06f1.png" title=" Gerenciar Page: clicar Gerenciar Usuarios" width="1920"/>
+                <img src="70e447484941c40313795852700093193df4646755ca5ecfe0d286c1407f06f1.png" title=" And clico em gerenciar 'Usu&aacute;rios' (completed)" width="1920"/>
+                <img src="22a0db8abea63981b8cc0386c9947003959bc1c64e794af877dc7eba8e853bfd.png" title=" And clico em criar nova conta" width="1920"/>
+                <img src="22a0db8abea63981b8cc0386c9947003959bc1c64e794af877dc7eba8e853bfd.png" title=" Gerenciar Usuarios: clicar Criar Nova Conta" width="1920"/>
+                <img src="22a0db8abea63981b8cc0386c9947003959bc1c64e794af877dc7eba8e853bfd.png" title=" And clico em criar nova conta (completed)" width="1920"/>
+                <img src="204f9c6fe74bd06823139648ab27c173e9f7842a11714c74cdfeabdd93066a58.png" title=" And preencho os detalhes da nova conta:
+| Nome do usuario | nome verdadeiro | email | nivel de acesso | habilitado | Protegido |
+| autobot 4 | outro automatizado | matheusventura@outlook.com | gerente | Sim | Nao |" width="1920"/>
+                <img src="204f9c6fe74bd06823139648ab27c173e9f7842a11714c74cdfeabdd93066a58.png" title=" Criar Projeto: preencher Nome De Usuario" width="1920"/>
+                <img src="4735ea9bb242f8f46d34791218c5a4d661a65492ec5e845b986073dfb70ebcef.png" title=" Criar Projeto: preencher Nome Verdadeiro" width="1920"/>
+                <img src="6d58fb70f3bd30b89e7b2f1b15afa3ab32eb49f4ee63aea0295ad34317011455.png" title=" Criar Projeto: preencher Email" width="1920"/>
+                <img src="7fa6f1141e0e8ec843b24a2fb434102ca1556540e12c7a63ee2a858b4a5f16b6.png" title=" Criar Projeto: preencher Nivel De Acesso" width="1920"/>
+                <img src="f3538698fd45498591ce9e42434db03e5afc9d48adda5998ec55e699f92bc6ab.png" title=" And preencho os detalhes da nova conta:
+| Nome do usuario | nome verdadeiro | email | nivel de acesso | habilitado | Protegido |
+| autobot 4 | outro automatizado | matheusventura@outlook.com | gerente | Sim | Nao |" width="1920"/>
+                <img src="f3538698fd45498591ce9e42434db03e5afc9d48adda5998ec55e699f92bc6ab.png" title=" Criar Projeto: clicar Criar Usuario" width="1920"/>
+                <img src="f3538698fd45498591ce9e42434db03e5afc9d48adda5998ec55e699f92bc6ab.png" title=" Then Sistema apresenta mensagem de usuario criado 'Usu&aacute;rio autobot 4 criado com um n&iacute;vel de acesso de gerente'" width="1920"/>
+                <img src="f3538698fd45498591ce9e42434db03e5afc9d48adda5998ec55e699f92bc6ab.png" title=" Criar Projeto: retorno Usuario Salvo" width="1920"/>
+                <img src="f3538698fd45498591ce9e42434db03e5afc9d48adda5998ec55e699f92bc6ab.png" title=" Then Sistema apresenta mensagem de usuario criado 'Usu&aacute;rio autobot 4 criado com um n&iacute;vel de acesso de gerente' (completed)" width="1920"/>
+                <img src="c12d7f03755f465f1b75f5214dc24836d3b74c6ade0a38f452d6ad4ebab82caa.png" title=" When Apago o usuario criado" width="1920"/>
+                <img src="c12d7f03755f465f1b75f5214dc24836d3b74c6ade0a38f452d6ad4ebab82caa.png" title=" Gerenciar Usuarios: clicar Apagar Usuario" width="1920"/>
+                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" Gerenciar Usuarios: clicar Apagar Conta" width="1920"/>
+                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" When Apago o usuario criado (completed)" width="1920"/>
+                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" Then sistema retorna mensagem 'Opera&ccedil;&atilde;o realizada com sucesso.' para excluir conta" width="1920"/>
+                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" Gerenciar Usuarios: retornar Mensagem De Exclusao" width="1920"/>
+                <img src="70e447484941c40313795852700093193df4646755ca5ecfe0d286c1407f06f1.png" title=" Gerenciar Usuarios: clique Aqui Para Prosseguir" width="1920"/>
+                <img src="70e447484941c40313795852700093193df4646755ca5ecfe0d286c1407f06f1.png" title=" Then sistema retorna mensagem 'Opera&ccedil;&atilde;o realizada com sucesso.' para excluir conta (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.70</span>
+</div>
+</body>
+</html>

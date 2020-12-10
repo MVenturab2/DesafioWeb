@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Criar nova tarefa","Crio uma nova tarefa","SUCCESS","2020-12-09T17:28:02.9-03:00[America/Sao_Paulo]","0.0","19.87"
+"Criar nova tarefa","Apagar tarefa criada","SUCCESS","2020-12-09T17:28:23.47-03:00[America/Sao_Paulo]","0.0","23.03"
+"Criar nova tarefa","adicionar relacionamento entre tarefas","SUCCESS","2020-12-09T17:28:47.179-03:00[America/Sao_Paulo]","0.0","30.26"
+"Criar nova tarefa","clonar tarefa","SUCCESS","2020-12-09T17:29:18.144-03:00[America/Sao_Paulo]","0.0","22.68"
+"Criar nova tarefa","fechar tarefa","SUCCESS","2020-12-09T17:29:41.538-03:00[America/Sao_Paulo]","0.0","20.08"

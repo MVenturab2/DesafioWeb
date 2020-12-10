@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login","Efetuar login com sucesso utilizando javascript","SUCCESS","2020-12-09T17:38:08.951-03:00[America/Sao_Paulo]","0.0","9.22"
+"Login","Efetuar login com sucesso","SUCCESS","2020-12-09T17:38:19.04-03:00[America/Sao_Paulo]","0.0","9.41"
+"Login","Efetuar login sem preencher usuario","SUCCESS","2020-12-09T17:38:29.15-03:00[America/Sao_Paulo]","0.0","7.94"
+"Login","Efetuar login errado","SUCCESS","2020-12-09T17:38:37.766-03:00[America/Sao_Paulo]","0.0","28.95"
