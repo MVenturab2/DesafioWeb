@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.serenitybddtemplate.tests.CriarTarefaTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 120.855 s - in br.com.serenitybddtemplate.tests.CriarTarefaTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 117.474 s - in br.com.serenitybddtemplate.tests.CriarTarefaTests

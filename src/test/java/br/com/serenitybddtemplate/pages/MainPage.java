@@ -19,43 +19,22 @@ public class MainPage extends PageBase {
     By registroDeMudancasButton = By.xpath("//*[@id='sidebar']/ul/li[4]/a/i");
     By planejamentoButton = By.cssSelector("i.menu-icon.fa.fa-road");
     By resumoButton = By.cssSelector("i.menu-icon.fa.fa-bar-chart-o");
-    //By gerenciarButton = By.xpath("//*[@id='sidebar']/ul/li[7]/a/i");
     By gerenciarButton = By.cssSelector("i.menu-icon.fa.fa-gears");
-
-
-
     By hideSidebarButton = By.xpath("//*[@id='sidebar-btn']/i");
-
-
     By convidarUsuariosButton = By.linkText("Convidar Usuários");
-
-
-
-    //texto na pagina
+    //cabeçalho
+    By minhaContaButton = By.linkText("Minha Conta");
+    //retornos da pagina
     By informacoesSiteTextArea = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[1]/h4");
     By resumoTextArea = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[1]/h4");
     By planejamentoTextArea = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/p");
     By registroMudancasTextArea = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/p");
     By detalhesFormularioTarefaTextArea = By.xpath("//*[@id='report_bug_form']/div/div[1]/h4");
-
     By filtrosTextArea = By.xpath("//*[@id='filter']/div[1]/h4");
     By atribuidosAMimTextArea = By.xpath("//*[@id='assigned']/div[1]/h4/a");
-
-
-
     By usernameLoginInfoTextArea = By.xpath("//*[@id='navbar-container']/div[2]/ul/li[3]/a/span");
-    By reportIssueLink = By.xpath("//a[@href='/bug_report_page.php']");
-
-
-
-    //cabeçalho
-    By minhaContaButton = By.linkText("Minha Conta");
-
-
-
 
     //Actions
-
     //Abrir telas
     public void clicarEmMinhaVisao(){
         click(minhaVisaoButton);
@@ -78,29 +57,16 @@ public class MainPage extends PageBase {
     public void clicarEmGerenciar(){
         click(gerenciarButton);
     }
-
     public void clicarEmMinimizarSidebar(){
         click(hideSidebarButton);
     }
-
     public void clicarConvidarUsuarios(){
         click(convidarUsuariosButton);
     }
-
-
-
-
-
-
-
-
-    //retornar informações da tela
-    public String retornaUsernameDasInformacoesDeLogin(){
-        return getText(usernameLoginInfoTextArea);
+    public void clicarEmMinhaConta(){
+        click(minhaContaButton);
     }
-
-
-
+    //retornar informações da tela
     public String retornaInformacoesSite(){
         return getText(informacoesSiteTextArea);
     }
@@ -122,18 +88,11 @@ public class MainPage extends PageBase {
     public String retornaatribuidosAMim(){
         return getText(atribuidosAMimTextArea);
     }
-
-
-
-
-
-    public void clicarEmReportIssue(){
-        click(reportIssueLink);
+    //retorno do login
+    public String retornaUsernameDasInformacoesDeLogin(){
+        return getText(usernameLoginInfoTextArea);
     }
 
 
-    public void clicarEmMinhaConta(){
-        click(minhaContaButton);
-    }
 
 }

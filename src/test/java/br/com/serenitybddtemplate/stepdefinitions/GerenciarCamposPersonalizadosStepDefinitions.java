@@ -1,27 +1,16 @@
 package br.com.serenitybddtemplate.stepdefinitions;
 
-import br.com.serenitybddtemplate.steps.CriarTarefaSteps;
 import br.com.serenitybddtemplate.steps.GerenciarCamposPersonalizadosSteps;
-import br.com.serenitybddtemplate.steps.GerenciarMarcadoresSteps;
-import br.com.serenitybddtemplate.steps.MainSteps;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
 import net.serenitybdd.core.Serenity;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
-
 import java.util.List;
 import java.util.Map;
 
 import static br.com.serenitybddtemplate.utils.GeraNomesAleatoriosUtils.gerarNumeros;
 
 public class GerenciarCamposPersonalizadosStepDefinitions {
-    @Steps
-    CriarTarefaSteps criarTarefaSteps;
-
-    @Steps
-    MainSteps mainSteps;
 
     @Steps
     GerenciarCamposPersonalizadosSteps gerenciarCamposPersonalizadosSteps;
@@ -38,10 +27,8 @@ public class GerenciarCamposPersonalizadosStepDefinitions {
             nomeCampoPersonalizado = nome;
         }
         Serenity.setSessionVariable("Campo Personalizado").to(nomeCampoPersonalizado);
-
         gerenciarCamposPersonalizadosSteps.preencherNomeCampoPersonalizado(nomeCampoPersonalizado);
         gerenciarCamposPersonalizadosSteps.clicarCriarNovoCampoPersonalizado();
-        //gerenciarCamposPersonalizadosSteps.cliqueAquiParaProsseguir();
     }
 
 
@@ -83,16 +70,13 @@ public class GerenciarCamposPersonalizadosStepDefinitions {
         if(data.get(0).get("Requerido no fechamento").equals("sim")) {
             gerenciarCamposPersonalizadosSteps.marcarRequeridoAoFechamento();
         }
-
         if(data.get(0).get("Projetos").equals("sim")) {
             gerenciarCamposPersonalizadosSteps.marcarProjetoCriado1();
         }
         if(data.get(0).get("Sequência").equals("sim")) {
             gerenciarCamposPersonalizadosSteps.marcarVincularCampoPersonalizado();
         }
-
         gerenciarCamposPersonalizadosSteps.clicarAtualizaCampoPersonalizado();
-
     }
 
     @And("apago o campo personalizado")
@@ -100,6 +84,5 @@ public class GerenciarCamposPersonalizadosStepDefinitions {
         gerenciarCamposPersonalizadosSteps.clicarApagarCampoPersonalizado();
         gerenciarCamposPersonalizadosSteps.clicarApagarCampo();
     }
-
 
 }

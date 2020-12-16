@@ -17,11 +17,10 @@ public class LoginStepDefinitions {
     @Steps
     MainSteps mainSteps;
 
-    @Given("informo o usuario '(.*)'")
+    @Given("informo o usuario '(.*)' na tela de login")
     public void preencherUsuario(String usuario){
         Serenity.setSessionVariable("usuario").to(usuario);
         loginSteps.preenhcerUsuario(usuario);
-        //administrator/root
     }
 
     @And("informo a senha '(.*)'")

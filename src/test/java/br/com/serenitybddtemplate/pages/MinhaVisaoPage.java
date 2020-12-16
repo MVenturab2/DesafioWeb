@@ -12,21 +12,17 @@ public class MinhaVisaoPage extends PageBase {
     }
     //Mapping
     By tarefaCriadaButton = By.linkText("Tarefa de teste para apagar");
-
     By apagarButton = By.xpath("//input[@value='Apagar']");
     By apagarTarefaButton = By.xpath("//input[@value='Apagar Tarefas']");
 
-
-
-
-
-
     //Actions
-    public void clicarTarefaCriada( String tarefa){
+    public void clicarTarefaCriada( ){
         click(tarefaCriadaButton);
     }
     public void clicarEmApagarTarefa( ){
         click(apagarButton);
+    }
+    public void clicarEmConfirmarApagarTarefa( ){
         click(apagarTarefaButton);
     }
 

@@ -4,15 +4,14 @@ D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\GerenciarSteps.
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\VerTarefasPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\GerenciarCamposPersonalizadosTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\NavegarAbasMenuTests.java
+D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\stepdefinitions\ZerarBancoStepDefinitions.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\CriarProjetoPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\GerenciarCamposPersonalizadosPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\GerenciarMarcadoresTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\GerenciarMarcadoresSteps.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\MainPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\bases\PageBase.java
-D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\BugReportSteps.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\GerenciarProjetosSteps.java
-D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\dbsteps\LimpaBaseDBSteps.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\CriarTarefaTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\flows\retornaElementosFlows.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\CriarUsuarioSteps.java
@@ -28,6 +27,7 @@ D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\MinhaVisaoSteps
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\GerenciarProjetosTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\stepdefinitions\NavegarAbasMenuStepDefinitions.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\GerenciarProjetosPage.java
+D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\ZerarBancoTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\CriarUsuarioPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\stepdefinitions\GerenciarCategoriasGlobaisStepDefinitions.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\dbsteps\UsersDBSteps.java
@@ -44,10 +44,8 @@ D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\GerenciarPerfis
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\LoginPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\MinhaContaPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\stepdefinitions\GerenciarProjetosStepDefinitions.java
-D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\BugReportPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\GerenciarCategoriasGlobaisTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\LoginTests.java
-D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\VerTarefasTests.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\GerenciarMarcadoresPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\GerenciarPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\steps\CriarTarefaSteps.java
@@ -55,5 +53,4 @@ D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\tests\GerenciarPerfis
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\GerenciarPerfisGlobaisPage.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\utils\GeneralUtils.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\pages\CriarTarefaPage.java
-D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\stepdefinitions\VerTarefasStepDefinitions.java
 D:\JOB\desafiomat\src\test\java\br\com\serenitybddtemplate\stepdefinitions\GerenciarMarcadoresStepDefinitions.java

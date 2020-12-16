@@ -6,15 +6,7 @@ import net.thucydides.core.annotations.Step;
 public class MainSteps {
     MainPage mainPage;
 
-    @Step("Retorna username das informações de login")
-    public String retornaUsernameDasInformacoesDeLogin(){
-        return mainPage.retornaUsernameDasInformacoesDeLogin();
-    }
 
-    @Step("Clicar em 'Report Issue'")
-    public void clicarEmReportIssue(){
-        mainPage.clicarEmReportIssue();
-    }
 
     // clicar em menus
     @Step("main: Clicar Em Minha Visao")
@@ -45,24 +37,16 @@ public class MainSteps {
     public void clicarEmGerenciar(){
         mainPage.clicarEmGerenciar();
     }
-
     @Step("main: Clicar minimizar bandeja")
     public void clicarEmMinimizarSidebar(){
         mainPage.clicarEmMinimizarSidebar();
     }
-
     @Step("main: Clicar Convidar Usuarios")
     public void clicarConvidarUsuarios(){
         mainPage.clicarConvidarUsuarios();
     }
 
-
-
-
-
-
-
-    //Retornar qual pagina esta
+    //Retornos da pagina
     @Step("main: retorna Informacoes Site")
     public String retornaInformacoesSite(){
         return mainPage.retornaInformacoesSite();
@@ -91,11 +75,13 @@ public class MainSteps {
     public String retornaatribuidosAMim(){
         return mainPage.retornaatribuidosAMim();
     }
-
-
     @Step("main: Clicar Em Minha Conta")
     public void clicarEmMinhaConta(){
         mainPage.clicarEmMinhaConta();
     }
-
+    //retorno do login
+    @Step("main: Retorna username das informações de login")
+    public String retornaUsernameDasInformacoesDeLogin(){
+        return mainPage.retornaUsernameDasInformacoesDeLogin();
+    }
 }

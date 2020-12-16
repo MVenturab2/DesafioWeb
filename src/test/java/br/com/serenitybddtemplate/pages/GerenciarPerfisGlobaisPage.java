@@ -12,21 +12,14 @@ public class GerenciarPerfisGlobaisPage extends PageBase {
     }
     //Mapping
 
-
-    //menus
-
     By plataformaField = By.id("platform");
     By osField = By.id("os");
     By versaoOSField = By.id("os-version");
     By descricaoField = By.id("description");
     By adicionarPerfilButton = By.xpath("//input[@value='Adicionar Perfil']");
-
     By selecionarPerfilCombobox = By.id("select-profile");
-
     By ParaApagarPerfilButton = By.xpath("//*[@id='account-profile-update-form']/div/div[2]/div[1]/div/table/tbody/tr[2]/td[2]/label/span");
     By EnviarButton = By.xpath("//input[@value='Enviar']");
-
-
 
     //Actions
     public void preencherPlataforma(String plataforma){
@@ -44,23 +37,19 @@ public class GerenciarPerfisGlobaisPage extends PageBase {
     public void clicarAdicionarPerfil(){
         click(adicionarPerfilButton);
     }
-
-
     public void selecionarPerfil(String perfil){
         comboBoxSelectByVisibleText(selecionarPerfilCombobox,perfil);
     }
-
-    public boolean retornarPerfilExiste(String perfil){
-        return returnComboBoxByVisibleText(selecionarPerfilCombobox,perfil);
-    }
-
     public void marcarParaApagarPerfil(){
         click(ParaApagarPerfilButton);
     }
     public void clicarEmEnviar(){
         click(EnviarButton);
     }
-
+    //retornos da pagina
+    public boolean retornarPerfilExiste(String perfil){
+        return returnComboBoxByVisibleText(selecionarPerfilCombobox,perfil);
+    }
 
 
 

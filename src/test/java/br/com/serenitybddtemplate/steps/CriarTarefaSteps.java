@@ -6,19 +6,19 @@ import net.thucydides.core.annotations.Step;
 public class CriarTarefaSteps {
     CriarTarefaPage criarTarefaPage;
 
-    @Step("Criar Tarefa: Selecionar Categoria")
+    @Step("Criar Tarefa: Selecionar Categoria '{0}'")
     public void selecionarCategoria(String Categoria){
         criarTarefaPage.selecionarCategoria(Categoria);
     }
-    @Step("Criar Tarefa: Selecionar Frequencia")
+    @Step("Criar Tarefa: Selecionar Frequencia '{0}'")
     public void selecionarFrequencia(String frequencia){
         criarTarefaPage.selecionarFrequencia(frequencia);
     }
-    @Step("Criar Tarefa: Selecionar Gravidade")
+    @Step("Criar Tarefa: Selecionar Gravidade '{0}'")
     public void selecionarGravidade(String gravidade){
         criarTarefaPage.selecionarGravidade(gravidade);
     }
-    @Step("Criar Tarefa: Selecionar Prioridade")
+    @Step("Criar Tarefa: Selecionar Prioridade '{0}'")
     public void selecionarPrioridade(String prioridade){
         criarTarefaPage.selecionarPrioridade(prioridade);
     }
@@ -26,39 +26,39 @@ public class CriarTarefaSteps {
     public void clicarSelecionarPerfil(){
         criarTarefaPage.clicarSelecionarPerfil();
     }
-    @Step("Criar Tarefa: Preencher Plataforma")
+    @Step("Criar Tarefa: Preencher Plataforma '{0}'")
     public void preencherPlataforma(String plataforma){
         criarTarefaPage.preencherPlataforma(plataforma);
     }
-    @Step("Criar Tarefa: Preencher SO")
+    @Step("Criar Tarefa: Preencher SO '{0}'")
     public void preencherSO(String so){
         criarTarefaPage.preencherSO(so);
     }
-    @Step("Criar Tarefa: Preencher Versao SO")
+    @Step("Criar Tarefa: Preencher Versao SO '{0}'")
     public void preencherVersaoSO(String versaoSO){
         criarTarefaPage.preencherVersaoSO(versaoSO);
     }
-    @Step("Criar Tarefa: Selecionar Categoria Atribuir")
+    @Step("Criar Tarefa: Selecionar Categoria Atribuir '{0}'")
     public void selecionarCategoriaAtribuir(String atribuir){
         criarTarefaPage.selecionarCategoriaAtribuir(atribuir);
     }
-    @Step("Criar Tarefa: Preencher Resumo")
+    @Step("Criar Tarefa: Preencher Resumo '{0}'")
     public void preencherResumo(String resumo){
         criarTarefaPage.preencherResumo(resumo);
     }
-    @Step("Criar Tarefa: Preencher Descricao")
+    @Step("Criar Tarefa: Preencher Descricao '{0}'")
     public void preencherDescricao(String descricao){
         criarTarefaPage.preencherDescricao(descricao);
     }
-    @Step("Criar Tarefa: Preencher Passos Para Reproduzir")
+    @Step("Criar Tarefa: Preencher Passos Para Reproduzir '{0}'")
     public void preencherPassosParaReproduzir(String passosParaReproduzir){
         criarTarefaPage.preencherPassosParaReproduzir(passosParaReproduzir);
     }
-    @Step("Criar Tarefa: Preencher Informacoes Adicionais")
+    @Step("Criar Tarefa: Preencher Informacoes Adicionais '{0}'")
     public void preencherInformacoesAdicionais(String informacoesAdicionais){
         criarTarefaPage.preencherInformacoesAdicionais(informacoesAdicionais);
     }
-    @Step("Criar Tarefa: Preencher Aplicar Marcadores")
+    @Step("Criar Tarefa: Preencher Aplicar Marcadores '{0}'")
     public void preencherAplicarMarcadores(String aplicarMarcadores){
         criarTarefaPage.preencherAplicarMarcadores(aplicarMarcadores);
     }
@@ -78,11 +78,11 @@ public class CriarTarefaSteps {
     public void clicarContinuarRelatando(){
         criarTarefaPage.clicarContinuarRelatando();
     }
-
     @Step("Criar Tarefa: Clicar Criar Nova Tarefa")
     public void clicarCriarNovaTarefa(){
         criarTarefaPage.clicarCriarNovaTarefa();
     }
+    //retornos da pagina
     @Step("Criar Tarefa: retorna MSG Ao Salvar Tarefa")
     public String retornaMSGAoSalvarTarefa(){
         return criarTarefaPage.retornaMSGAoSalvarTarefa();

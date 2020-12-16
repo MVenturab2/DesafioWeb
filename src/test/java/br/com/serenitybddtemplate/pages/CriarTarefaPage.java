@@ -16,7 +16,6 @@ public class CriarTarefaPage extends PageBase {
     By gravidadeCombobox = By.id("severity");
     By prioridadeCombobox = By.id("priority");
     By selecionarPerfilButton = By.xpath("//*[@id='profile_closed_link']/i");
-    By fecharSelecionarPerfilButton = By.xpath("//*[@id='profile_open_link']/i");
     By plataformaField= By.id("platform");
     By soField= By.id("os");
     By versaoSOField= By.id("os_build");
@@ -26,29 +25,17 @@ public class CriarTarefaPage extends PageBase {
     By passosParaReproduzirField = By.id("steps_to_reproduce");
     By informacoesAdicionaisField= By.id("additional_info");
     By aplicarMarcadoresField= By.id("tag_string");
-
-
     By enviarArquivosButton= By.xpath("//*[@id='report_bug_form']/div/div[2]/div[1]/div/table/tbody/tr[12]/td/div[2]");
     By visibilidadePublicoRadiobutton = By.xpath("//*[@id='report_bug_form']/div/div[2]/div[1]/div/table/tbody/tr[13]/td/label[1]/span");
     By visibilidadePrivadoRadiobutton = By.xpath("//*[@id='report_bug_form']/div/div[2]/div[1]/div/table/tbody/tr[13]/td/label[2]/span");
-
     By continuarRelatandoCheckbutton = By.xpath("//*[@id='report_bug_form']/div/div[2]/div[1]/div/table/tbody/tr[14]/td/label/span");
-
-
     By criarNovaTarefaButton = By.xpath("//*[@id='report_bug_form']/div/div[2]/div[2]/input");
-
+    //Retornos da pagina
     By msgAoSalvarTarefaTextArea = By.xpath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
-
-
     //Escolher Projeto
     By selecionarProjetoCombobox = By.id("select-project-id");
     By tornarPadraoCheckbox = By.cssSelector("span.lbl");
     By selecionarProjetoButton = By.xpath("//input[@value='Selecionar Projeto']");
-
-
-
-
-
 
     //Actions
 
@@ -64,13 +51,7 @@ public class CriarTarefaPage extends PageBase {
     public void selecionarPrioridade(String prioridade){
         comboBoxSelectByVisibleText(prioridadeCombobox,prioridade);
     }
-    public void clicarSelecionarPerfil(){
-        try{
-
-            clickWait1sec(selecionarPerfilButton);
-
-        }catch (Exception ignored){}
-    }
+    public void clicarSelecionarPerfil(){ try{ clickWait1sec(selecionarPerfilButton); }catch (Exception ignored){} }
     public void preencherPlataforma(String plataforma){
         sendKeys(plataformaField,plataforma);
     }
@@ -86,7 +67,6 @@ public class CriarTarefaPage extends PageBase {
     public void preencherResumo(String resumo){
         sendKeys(resumoField,resumo);
     }
-
     public void preencherDescricao(String descricao){
         sendKeys(descricaoField,descricao);
     }
@@ -111,19 +91,12 @@ public class CriarTarefaPage extends PageBase {
     public void clicarContinuarRelatando(){
         click(continuarRelatandoCheckbutton);
     }
-
-
     public void clicarCriarNovaTarefa(){
         click(criarNovaTarefaButton);
     }
-
+    //retornos da pagina
     public String retornaMSGAoSalvarTarefa(){
         return getText(msgAoSalvarTarefaTextArea);
     }
-
-
-
-
-
 
 }

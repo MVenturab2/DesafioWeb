@@ -19,9 +19,8 @@ public class CriarUsuarioPage extends PageBase {
     By habilitadoCheckbox = By.xpath("//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[5]/td[2]/label/span");
     By protegidoCheckbox = By.xpath("//form[@id='manage-user-create-form']/div/div[2]/div/div/table/tbody/tr[6]/td[2]/label/span");
     By criarUsuarioButton = By.xpath("//input[@value='Criar Usuário']");
-
+    //retornos da pagina
     By retornoUsuarioSalvoErroButton = By.xpath("//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
-
     By retornoUsuarioSalvoButton = By.xpath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
 
     //Actions
@@ -47,12 +46,10 @@ public class CriarUsuarioPage extends PageBase {
     public void clicarCriarUsuario( ) {
         click(criarUsuarioButton);
     }
-
+    //retornos da pagina
     public String retornoUsuarioSalvoErro( ) {
         return getText(retornoUsuarioSalvoErroButton);
     }
-
-
     public String retornoUsuarioSalvo( ) {
         return getText(retornoUsuarioSalvoButton);
     }

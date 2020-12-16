@@ -21,39 +21,29 @@ public class retornaElementosFlows {
     public void retornaElementosFiltro( ){
         String cabecalhoTela = "Filtros";
         Assert.assertEquals(cabecalhoTela, mainSteps.retornaFiltros());
-
     }
     public void retornaElementosCriarTarefa( ){
         String cabecalhoTela = "Digite os Detalhes do Relatório";
         Assert.assertEquals(cabecalhoTela, mainSteps.retornaDetalhesFormularioTarefa());
-
     }
     public void retornaElementosRegistroMudancas( ){
         String cabecalhoTela = "Nenhum registro de mudança disponível. Apenas tarefas que indiquem a versão na qual foi resolvida aparecerão nos registros de mudança.";
         Assert.assertEquals(cabecalhoTela, mainSteps.retornaRegistroMudancas());
-
     }
     public void retornaElementosPlanejamento( ){
         String cabecalhoTela = "Nenhum planejamento disponível. Apenas tarefas com a versão indicada aparecerão no planejamento.";
         Assert.assertEquals(cabecalhoTela, mainSteps.retornaPlanejamento());
-
     }
     public void retornaElementosResumo( ){
         String cabecalhoTela = "Resumo";
         Assert.assertEquals(cabecalhoTela, mainSteps.retornaResumo());
-
     }
     public void retornaElementosGerenciar( ){
         String cabecalhoTela = "Informação do Site";
         Assert.assertEquals(cabecalhoTela, gerenciarSteps.retornaVisaoGeral());
-
     }
 
-
-
-
     /// Abas do menu gerenciar
-
     public void retornaElementosGerenciarInfoSite( ){
         String cabecalhoTelaGerenciar = "Informação do Site";
         Assert.assertTrue(gerenciarSteps.retornaVisaoGeral().contains(cabecalhoTelaGerenciar));
@@ -82,11 +72,9 @@ public class retornaElementosFlows {
         String cabecalhoTelaGerenciar = "Plugins Instalados";
         Assert.assertTrue(gerenciarSteps.retornaGerenciarplugins().contains( cabecalhoTelaGerenciar) );
     }
-
     public void retornaElementosGerenciarConfiguracao( ){
         String cabecalhoTelaGerenciar = "ANEXO(S)";
         Assert.assertTrue(gerenciarSteps.retornaGerenciarconfiguracao().contains(cabecalhoTelaGerenciar) );
     }
-
 
 }

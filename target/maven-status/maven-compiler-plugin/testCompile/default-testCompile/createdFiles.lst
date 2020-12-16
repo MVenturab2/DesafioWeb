@@ -2,7 +2,6 @@ br\com\serenitybddtemplate\stepdefinitions\GerenciarProjetosStepDefinitions.clas
 br\com\serenitybddtemplate\steps\LoginSteps.class
 br\com\serenitybddtemplate\stepdefinitions\criarTarefaStepDefinitions.class
 br\com\serenitybddtemplate\hooks\GeneralHooks.class
-br\com\serenitybddtemplate\tests\VerTarefasTests.class
 br\com\serenitybddtemplate\pages\GerenciarUsuariosPage.class
 br\com\serenitybddtemplate\tests\GerenciarPerfisGlobaisTests.class
 br\com\serenitybddtemplate\pages\CriarTarefaPage.class
@@ -12,7 +11,6 @@ br\com\serenitybddtemplate\stepdefinitions\LoginStepDefinitions.class
 br\com\serenitybddtemplate\pages\MainPage.class
 br\com\serenitybddtemplate\pages\LoginPage.class
 br\com\serenitybddtemplate\steps\GerenciarCamposPersonalizadosSteps.class
-br\com\serenitybddtemplate\dbsteps\LimpaBaseDBSteps.class
 br\com\serenitybddtemplate\pages\MinhaVisaoPage.class
 br\com\serenitybddtemplate\steps\MainSteps.class
 br\com\serenitybddtemplate\steps\GerenciarProjetosSteps.class
@@ -21,8 +19,8 @@ br\com\serenitybddtemplate\tests\LoginTests.class
 br\com\serenitybddtemplate\dbsteps\UsersDBSteps.class
 br\com\serenitybddtemplate\stepdefinitions\GerenciarCategoriasGlobaisStepDefinitions.class
 br\com\serenitybddtemplate\steps\MinhaVisaoSteps.class
+br\com\serenitybddtemplate\tests\ZerarBancoTests.class
 br\com\serenitybddtemplate\stepdefinitions\NavegarAbasMenuStepDefinitions.class
-br\com\serenitybddtemplate\steps\BugReportSteps.class
 br\com\serenitybddtemplate\steps\GerenciarUsuariosSteps.class
 br\com\serenitybddtemplate\tests\GerenciarCamposPersonalizadosTests.class
 br\com\serenitybddtemplate\utils\GeneralUtils.class
@@ -32,7 +30,6 @@ br\com\serenitybddtemplate\bases\PageBase.class
 br\com\serenitybddtemplate\stepdefinitions\GerenciarUsuariosStepDefinitions.class
 br\com\serenitybddtemplate\tests\NavegarAbasMenuTests.class
 br\com\serenitybddtemplate\pages\GerenciarPerfisGlobaisPage.class
-br\com\serenitybddtemplate\stepdefinitions\VerTarefasStepDefinitions.class
 br\com\serenitybddtemplate\steps\GerenciarMarcadoresSteps.class
 br\com\serenitybddtemplate\tests\GerenciarProjetosTests.class
 br\com\serenitybddtemplate\pages\MinhaContaPage.class
@@ -45,6 +42,7 @@ br\com\serenitybddtemplate\steps\CriarUsuarioSteps.class
 br\com\serenitybddtemplate\pages\GerenciarPage.class
 br\com\serenitybddtemplate\steps\CriarTarefaSteps.class
 br\com\serenitybddtemplate\pages\GerenciarMarcadoresPage.class
+br\com\serenitybddtemplate\stepdefinitions\ZerarBancoStepDefinitions.class
 br\com\serenitybddtemplate\stepdefinitions\GerenciarPerfisGlobaisStepDefinitions.class
 br\com\serenitybddtemplate\steps\CriarProjetoSteps.class
 br\com\serenitybddtemplate\tests\GerenciarUsuariosTests.class
@@ -55,5 +53,4 @@ br\com\serenitybddtemplate\pages\GerenciarProjetosPage.class
 br\com\serenitybddtemplate\steps\GerenciarPerfisGlobaisSteps.class
 br\com\serenitybddtemplate\steps\GerenciarSteps.class
 br\com\serenitybddtemplate\pages\VerTarefasPage.class
-br\com\serenitybddtemplate\pages\BugReportPage.class
 br\com\serenitybddtemplate\pages\CriarProjetoPage.class

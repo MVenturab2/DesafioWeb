@@ -1,16 +1,12 @@
 package br.com.serenitybddtemplate.steps;
 
 import br.com.serenitybddtemplate.pages.GerenciarCamposPersonalizadosPage;
-import br.com.serenitybddtemplate.pages.GerenciarMarcadoresPage;
 import net.thucydides.core.annotations.Step;
 
 public class GerenciarCamposPersonalizadosSteps {
     GerenciarCamposPersonalizadosPage gerenciarCamposPersonalizadosPage;
 
-
-
-
-    @Step("Gerenciar Campos Personalizados: preencher Nome Campo Personalizado")
+    @Step("Gerenciar Campos Personalizados: preencher Nome Campo Personalizado '{0}'")
     public void preencherNomeCampoPersonalizado(String nome){
         gerenciarCamposPersonalizadosPage.preencherNomeCampoPersonalizado(nome);
     }
@@ -22,44 +18,41 @@ public class GerenciarCamposPersonalizadosSteps {
     public void cliqueAquiParaProsseguir(){
         gerenciarCamposPersonalizadosPage.cliqueAquiParaProsseguir();
     }
-
-
+    //retornos da pagina
     @Step("Gerenciar Campos Personalizados: retorna Primeira Linha Campos Personalizados")
     public String retornaPrimeiraLinhaCampoPersonalizado(){
         return gerenciarCamposPersonalizadosPage.retornaPrimeiraLinhaCampoPersonalizado();
     }
-
-
     //Alterar Campo Personalizado
-    @Step("Gerenciar Campos Personalizados: selecionar Tipo")
+    @Step("Gerenciar Campos Personalizados: selecionar Tipo '{0}'")
     public void selecionarTipo(String tipo){
         gerenciarCamposPersonalizadosPage.selecionarTipo(tipo);
     }
-    @Step("Gerenciar Campos Personalizados: preencher Valores Possiveis")
+    @Step("Gerenciar Campos Personalizados: preencher Valores Possiveis '{0}'")
     public void preencherValoresPossiveis(String valoresPossiveis){
         gerenciarCamposPersonalizadosPage.preencherValoresPossiveis(valoresPossiveis);
     }
-    @Step("Gerenciar Campos Personalizados: preencher Valor Padrao")
+    @Step("Gerenciar Campos Personalizados: preencher Valor Padrao '{0}'")
     public void preencherValorPadrao(String valorPadrao){
         gerenciarCamposPersonalizadosPage.preencherValorPadrao(valorPadrao);
     }
-    @Step("Gerenciar Campos Personalizados: preencher Expressao Regular")
+    @Step("Gerenciar Campos Personalizados: preencher Expressao Regular '{0}'")
     public void preencherExpressaoRegular(String expressaoRegular){
         gerenciarCamposPersonalizadosPage.preencherExpressaoRegular(expressaoRegular);
     }
-    @Step("Gerenciar Campos Personalizados: selecionar Acesso De Leitura")
+    @Step("Gerenciar Campos Personalizados: selecionar Acesso De Leitura '{0}'")
     public void selecionarAcessoDeLeitura(String acessoDeLeitura){
         gerenciarCamposPersonalizadosPage.selecionarAcessoDeLeitura(acessoDeLeitura);
     }
-    @Step("Gerenciar Campos Personalizados: selecionar Acesso De Escrita")
+    @Step("Gerenciar Campos Personalizados: selecionar Acesso De Escrita '{0}'")
     public void selecionarAcessoDeEscrita(String acessoDeEscrita){
         gerenciarCamposPersonalizadosPage.selecionarAcessoDeEscrita(acessoDeEscrita);
     }
-    @Step("Gerenciar Campos Personalizados: preencher Comprimento Minimo")
+    @Step("Gerenciar Campos Personalizados: preencher Comprimento Minimo '{0}'")
     public void preencherComprimentoMinimo(String comprimentoMinimo){
         gerenciarCamposPersonalizadosPage.preencherComprimentoMinimo(comprimentoMinimo);
     }
-    @Step("Gerenciar Campos Personalizados: preencher Comprimento Maximo")
+    @Step("Gerenciar Campos Personalizados: preencher Comprimento Maximo '{0}'")
     public void preencherComprimentoMaximo(String comprimentoMaximo){
         gerenciarCamposPersonalizadosPage.preencherComprimentoMaximo(comprimentoMaximo);
     }
@@ -111,23 +104,13 @@ public class GerenciarCamposPersonalizadosSteps {
     public void marcarVincularCampoPersonalizado(){
         gerenciarCamposPersonalizadosPage.marcarVincularCampoPersonalizado();
     }
-
     @Step("Gerenciar Campos Personalizados: clicar em Apagar Campo Personalizado")
     public void clicarApagarCampoPersonalizado(){
         gerenciarCamposPersonalizadosPage.clicarApagarCampoPersonalizado();
     }
-
     @Step("Gerenciar Campos Personalizados: clicar em Apagar Campo")
     public void clicarApagarCampo(){
         gerenciarCamposPersonalizadosPage.clicarApagarCampo();
     }
-
-
-
-
-
-
-
-
 
 }

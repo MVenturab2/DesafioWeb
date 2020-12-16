@@ -12,10 +12,8 @@ public class GerenciarPage extends PageBase {
     }
     //Mapping
 
-
     //menus
     By visaoGeralButton = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/ul/li[1]/a/i");
-
     By gerenciarUsuariosButton = By.partialLinkText("Gerenciar Usuários");
     By gerenciarProjetosButton = By.partialLinkText("Gerenciar Projetos");
     By gerenciarMarcadoresButton = By.partialLinkText("Gerenciar Marcadores");
@@ -23,8 +21,7 @@ public class GerenciarPage extends PageBase {
     By gerenciarperfisGlobaisButton = By.partialLinkText("Gerenciar Perfís Globais");
     By gerenciarpluginsButton = By.partialLinkText("Gerenciar Plugins");
     By gerenciarconfiguracaoButton = By.partialLinkText("Gerenciar Configuração");
-
-    // titulo page
+    // retornos da pagina
     By visaoGeralTextArea = By.xpath("//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div/h4");
     By gerenciarUsuariosTextArea = By.xpath("//div[@id='main-container']/div[2]/div[2]/div/div/div[4]/div/h4");
     By gerenciarProjetosTextArea = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[1]/h4");
@@ -59,8 +56,7 @@ public class GerenciarPage extends PageBase {
     public void clicarGerenciarconfiguracao(){
         click(gerenciarconfiguracaoButton);
     }
-
-
+    // retornos da pagina
     public String retornaVisaoGeral(){
         return getText(visaoGeralTextArea);
     }

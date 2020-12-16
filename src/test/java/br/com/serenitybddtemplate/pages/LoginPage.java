@@ -15,41 +15,36 @@ public class LoginPage extends PageBase {
     //Mapping
     By usernameField = By.id("username");
     By passwordField = By.id("password");
-    By mensagemErroTextArea = By.xpath("//*[@id='main-container']/div/div/div/div/div[4]/p");
     By entrarButton = By.xpath("//input[@value='Entrar']");
+
+    By mensagemErroTextArea = By.xpath("//*[@id='main-container']/div/div/div/div/div[4]/p");
 
 
     //Actions
     public void preenhcerUsuario(String usuario){
         sendKeys(usernameField, usuario);
     }
-
     public void preencherSenha(String senha){
         sendKeys(passwordField, senha);
     }
-
     public void clicarEmLogin(){
         click(entrarButton);
     }
 
-    public String retornaMensagemDeErro(){
-        return getText(mensagemErroTextArea);
-    }
-
-
-
-
+    //JavaScript
     public void preencherUsuarioJavaScript(String usuario){
         sendKeysJavaScript(usernameField, usuario);
     }
-
     public void preencherSenhaJavaScript(String senha){
         sendKeysJavaScript(passwordField, senha);
     }
-
     public void clicarEmLoginJavaScript(){
         clickJavaScript(entrarButton);
     }
 
+    //Retornos da pagina
+    public String retornaMensagemDeErro(){
+        return getText(mensagemErroTextArea);
+    }
 
 }

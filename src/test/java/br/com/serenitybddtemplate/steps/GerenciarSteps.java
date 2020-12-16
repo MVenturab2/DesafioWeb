@@ -1,6 +1,5 @@
 package br.com.serenitybddtemplate.steps;
 
-import br.com.serenitybddtemplate.pages.CriarTarefaPage;
 import br.com.serenitybddtemplate.pages.GerenciarPage;
 import net.thucydides.core.annotations.Step;
 
@@ -39,10 +38,7 @@ public class GerenciarSteps {
     public void clicarGerenciarconfiguracao(){
         gerenciarPage.clicarGerenciarconfiguracao();
     }
-
-
-
-
+    // retornos da pagina
     @Step("Gerenciar Page: retornar Visao Geral")
     public String retornaVisaoGeral(){
         return gerenciarPage.retornaVisaoGeral();
@@ -75,7 +71,4 @@ public class GerenciarSteps {
     public String retornaGerenciarconfiguracao(){
         return gerenciarPage.retornaGerenciarconfiguracao();
     }
-
-
-
 }

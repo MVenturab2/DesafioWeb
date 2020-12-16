@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.serenitybddtemplate.tests.NavegarAbasMenuTests
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 239.709 s - in br.com.serenitybddtemplate.tests.NavegarAbasMenuTests
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 228.654 s - in br.com.serenitybddtemplate.tests.NavegarAbasMenuTests

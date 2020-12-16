@@ -22,11 +22,14 @@ public class GeneralHooks {
         Serenity.setSessionVariable("usuario").to(usuario);
     }
 
-    @Before(order = 0)
+
+
+    @Before(order = 0, value = {"not @query"})
     public void beforeScenariologin(){
         //código a ser executado antes de cada cenário
         loginSteps.abrirMantis();
     }
+
 
     @After
     public void afterScenario(){

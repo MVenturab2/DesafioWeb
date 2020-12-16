@@ -131,7 +131,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-12-2020 17:37</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-12-2020 21:29</span>
     <br style="clear:left"/>
 </div>
 
@@ -156,6 +156,9 @@
                                 </div>
                             </div>
 
+                            <div class="requirementNarrative">Background: estar logado
+                                    <p></p>
+                            </div>
                         </td>
                         <td valign="top" align="right">
                         </td>
@@ -166,9 +169,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Crio um novo usuario pelo botao convidar usuario
+                                <span class="error-color">Crio um novo usuario pelo botao convidar usuario
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -185,41 +188,71 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: no such element: Unable to locate element: {'method':'xpath','selector':'//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p'}</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>br.com.serenitybddtemplate.bases.PageBase.waitForElement(PageBase.java:45)<br />br.com.serenitybddtemplate.bases.PageBase.getText(PageBase.java:210)<br />br.com.serenitybddtemplate.pages.CriarUsuarioPage.retornoUsuarioSalvo(CriarUsuarioPage.java:54)<br />br.com.serenitybddtemplate.steps.CriarUsuarioSteps.retornoUsuarioSalvo(CriarUsuarioSteps.java:44)<br />br.com.serenitybddtemplate.stepdefinitions.GerenciarUsuariosStepDefinitions.retornaMarcadorCriado(GerenciarUsuariosStepDefinitions.java:59)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6431690343680226868.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="20751074aa616d8ca32771653149891b111e8474db230b8c59b587eca783e230.png" title=" Abrir Mantis" width="1920"/>
-                <img src="f253a7bf9b1dbe68897d229ece9f30eed6040e767175ee6ad7d5b4a098b02cef.png" title=" Preencher usu&aacute;rio com 'administrator'" width="1920"/>
-                <img src="3a2498f18daea4991195fc522036a7a7fcf99153bb5493a9ebb867ee499a26ca.png" title=" Clicar em 'Login'" width="1920"/>
-                <img src="6653342e027a26d83a6bdb40034c4a3699f9e894bcd1ef855f4cbc5175ef1fb6.png" title=" Preencher senha com '[0}'" width="1920"/>
-                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Clicar em 'Login'" width="1920"/>
-                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Given que estou logado como administrador no sistema" width="1920"/>
-                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Retorna username das informa&ccedil;&otilde;es de login" width="1920"/>
-                <img src="e774c20a8b7032c56cde559c5dcd03995d894e6b4f287c7d54e833f994a79852.png" title=" Given que estou logado como administrador no sistema (completed)" width="1920"/>
-                <img src="22a0db8abea63981b8cc0386c9947003959bc1c64e794af877dc7eba8e853bfd.png" title=" When clico em 'Convidar Usu&aacute;rios'" width="1920"/>
-                <img src="22a0db8abea63981b8cc0386c9947003959bc1c64e794af877dc7eba8e853bfd.png" title=" main: Clicar Convidar Usuarios" width="1920"/>
-                <img src="22a0db8abea63981b8cc0386c9947003959bc1c64e794af877dc7eba8e853bfd.png" title=" When clico em 'Convidar Usu&aacute;rios' (completed)" width="1920"/>
-                <img src="50fcd7c184c4b1971098026a193f5c7f2d9fcd9b5cca0cf8dcc964a3c9cd8b34.png" title=" And preencho os detalhes da nova conta:
+                <img src="814bce011937b2268fbb2db025c23078b24ce3e7f9ab10b99376e73333d27bdd.png" title=" Login: Abrir Mantis" width="1280"/>
+                <img src="8f9ca5c314b26b6bd3fcb56995bbc2fe61e14f6b1e5cd1f973ccf6c03e51cec1.png" title=" Login: Preencher usu&aacute;rio com 'administrator'" width="1280"/>
+                <img src="5642cb508a5b23c0c2ccb4ab9e8fb01ac11ceeb2d3949fca68197d69234eb4ab.png" title=" Login: Clicar em entrar" width="1280"/>
+                <img src="8445aa77fe56a65ab9e0532f0e28f9cf41fecbab259de109025f8e85ab9b11f2.png" title=" Login: Preencher senha com '[0}'" width="1280"/>
+                <img src="111cfed03474b7b22a1bd81a6264646bdf5e49cbd5846c915fd26ce0a146e58c.png" title=" Login: Clicar em entrar" width="1280"/>
+                <img src="111cfed03474b7b22a1bd81a6264646bdf5e49cbd5846c915fd26ce0a146e58c.png" title=" Given que estou logado como administrador no sistema" width="1280"/>
+                <img src="111cfed03474b7b22a1bd81a6264646bdf5e49cbd5846c915fd26ce0a146e58c.png" title=" main: Retorna username das informa&ccedil;&otilde;es de login" width="1280"/>
+                <img src="111cfed03474b7b22a1bd81a6264646bdf5e49cbd5846c915fd26ce0a146e58c.png" title=" Given que estou logado como administrador no sistema (completed)" width="1280"/>
+                <img src="865924b807d730ba5888f5e1130ac1bc370cc28def66d4542ac9192af8d98ad7.png" title=" When clico em Convidar Usu&aacute;rios" width="1280"/>
+                <img src="865924b807d730ba5888f5e1130ac1bc370cc28def66d4542ac9192af8d98ad7.png" title=" main: Clicar Convidar Usuarios" width="1280"/>
+                <img src="865924b807d730ba5888f5e1130ac1bc370cc28def66d4542ac9192af8d98ad7.png" title=" When clico em Convidar Usu&aacute;rios (completed)" width="1280"/>
+                <img src="6be41f7b187215224fa642b650d0f78501df13d1e6954bb5c30ffa0bfcd5b7e6.png" title=" And preencho os detalhes da nova conta:
 | Nome do usuario | nome verdadeiro | email | nivel de acesso | habilitado | Protegido |
-| autobot 5 | usuario automatizado | matheus.ventura@base2.com.br | gerente | Sim | Nao |" width="1920"/>
-                <img src="50fcd7c184c4b1971098026a193f5c7f2d9fcd9b5cca0cf8dcc964a3c9cd8b34.png" title=" Criar Projeto: preencher Nome De Usuario" width="1920"/>
-                <img src="6722b0dbf276ac7f56201821b8e67d944c06c45bd619300df32768f6ba56b026.png" title=" Criar Projeto: preencher Nome Verdadeiro" width="1920"/>
-                <img src="cfdb1a86fbcc917490514d0cf70c85b95da547a1e3e58d9bafc04eeb1e6b4040.png" title=" Criar Projeto: preencher Email" width="1920"/>
-                <img src="3a478518f10ffb0fee86e7b503383dbb960e0327bd0c56988642eb0df24515af.png" title=" Criar Projeto: preencher Nivel De Acesso" width="1920"/>
-                <img src="99da0ae098ddc61076be594b044db5afe62fb6c662f39bb85e4566d16cd19071.png" title=" Criar Projeto: clicar Criar Usuario" width="1920"/>
-                <img src="99da0ae098ddc61076be594b044db5afe62fb6c662f39bb85e4566d16cd19071.png" title=" And preencho os detalhes da nova conta:
+| autobot 5 | usuario automatizado | matheus.ventura@base2.com.br | gerente | Sim | Nao |" width="1280"/>
+                <img src="6be41f7b187215224fa642b650d0f78501df13d1e6954bb5c30ffa0bfcd5b7e6.png" title=" Criar usuario: preencher Nome De Usuario 'autobot 5'" width="1280"/>
+                <img src="ecf4da4e9db328fa44084d545df7645434be7745c7228c671834d41a967efa8f.png" title=" Criar usuario: preencher Nome Verdadeiro 'usuario automatizado'" width="1280"/>
+                <img src="c3e4fe758cfe8611509ebfbe863185f48a2add7d9db625d05a6693b900b459c8.png" title=" Criar usuario: preencher Email 'matheus.ventura@base2.com.br'" width="1280"/>
+                <img src="68cf3a909ae57f89e66130b1b3ef59c49e5be8ef1764d9423337d55f707737a8.png" title=" Criar usuario: preencher Nivel De Acesso 'gerente'" width="1280"/>
+                <img src="1f7ecc767a6670858473964b97d3b094537287b55b154466af197cb695dfab44.png" title=" Criar usuario: clicar Criar Usuario" width="1280"/>
+                <img src="1f7ecc767a6670858473964b97d3b094537287b55b154466af197cb695dfab44.png" title=" And preencho os detalhes da nova conta:
 | Nome do usuario | nome verdadeiro | email | nivel de acesso | habilitado | Protegido |
-| autobot 5 | usuario automatizado | matheus.ventura@base2.com.br | gerente | Sim | Nao | (completed)" width="1920"/>
-                <img src="99da0ae098ddc61076be594b044db5afe62fb6c662f39bb85e4566d16cd19071.png" title=" Then Sistema apresenta mensagem de usuario criado 'Usu&aacute;rio autobot 5 criado com um n&iacute;vel de acesso de gerente'" width="1920"/>
-                <img src="99da0ae098ddc61076be594b044db5afe62fb6c662f39bb85e4566d16cd19071.png" title=" Criar Projeto: retorno Usuario Salvo" width="1920"/>
-                <img src="99da0ae098ddc61076be594b044db5afe62fb6c662f39bb85e4566d16cd19071.png" title=" Then Sistema apresenta mensagem de usuario criado 'Usu&aacute;rio autobot 5 criado com um n&iacute;vel de acesso de gerente' (completed)" width="1920"/>
-                <img src="6d6ab1a9b9751126fce63c8ecb45369562985dfa78775c589130659e5178136a.png" title=" When Apago o usuario criado" width="1920"/>
-                <img src="6d6ab1a9b9751126fce63c8ecb45369562985dfa78775c589130659e5178136a.png" title=" Gerenciar Usuarios: clicar Apagar Usuario" width="1920"/>
-                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" Gerenciar Usuarios: clicar Apagar Conta" width="1920"/>
-                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" When Apago o usuario criado (completed)" width="1920"/>
-                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" Then sistema retorna mensagem 'Opera&ccedil;&atilde;o realizada com sucesso.' para excluir conta" width="1920"/>
-                <img src="fa096f2fb764ad11bc38c25ba27d9ba57358a3aeb64dbad923dd9037bdc4531c.png" title=" Gerenciar Usuarios: retornar Mensagem De Exclusao" width="1920"/>
-                <img src="e1e41e34753c4898601001c1f37da55d085b1868c1e2f7a40a56df28c0703301.png" title=" Gerenciar Usuarios: clique Aqui Para Prosseguir" width="1920"/>
-                <img src="e1e41e34753c4898601001c1f37da55d085b1868c1e2f7a40a56df28c0703301.png" title=" Then sistema retorna mensagem 'Opera&ccedil;&atilde;o realizada com sucesso.' para excluir conta (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+| autobot 5 | usuario automatizado | matheus.ventura@base2.com.br | gerente | Sim | Nao | (completed)" width="1280"/>
+                <img src="1f7ecc767a6670858473964b97d3b094537287b55b154466af197cb695dfab44.png" title=" Then sistema apresenta mensagem de usuario criado 'Usu&aacute;rio autobot 5 criado com um n&iacute;vel de acesso de gerente'" width="1280"/>
+                <img src="1f7ecc767a6670858473964b97d3b094537287b55b154466af197cb695dfab44.png" title=" Criar usuario: retorno Usuario Salvo: <span class='error-color'>ERROR</span>" width="1280"/>
             </div>
         </div>
 

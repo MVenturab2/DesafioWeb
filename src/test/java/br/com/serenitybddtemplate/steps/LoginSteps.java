@@ -7,48 +7,45 @@ public class LoginSteps {
 
     LoginPage loginPage;
 
-    @Step("Abrir Mantis")
+    //Abrir navagador
+    @Step("Login: Abrir Mantis")
     public void abrirMantis(){
         loginPage.open();
     }
 
-    @Step("Preencher usuário com '{0}'")
+    //Login
+    @Step("Login: Preencher usuário com '{0}'")
     public void preenhcerUsuario(String usuario){
         loginPage.preenhcerUsuario(usuario);
     }
-
-    @Step("Preencher senha com '[0}'")
+    @Step("Login: Preencher senha com '[0}'")
     public void preencherSenha(String senha){
         loginPage.preencherSenha(senha);
     }
-
-    @Step("Clicar em 'Login'")
+    @Step("Login: Clicar em entrar")
     public void clicarEmLogin(){
         loginPage.clicarEmLogin();
     }
 
-    @Step("Retorna mensagem de erro")
-    public String retornaMensagemDeErro(){
-        return loginPage.retornaMensagemDeErro();
-    }
-
-
-
-
-    @Step("Preencher usuário com '{0}'")
+    //JavaScript
+    @Step("Login: Preencher usuário com '{0}' utilizando javascript")
     public void preencherUsuarioJavaScript(String usuario){
         loginPage.preencherUsuarioJavaScript(usuario);
     }
-
-    @Step("Preencher senha com '[0}'")
+    @Step("Login: Preencher senha com '[0}' utilizando javascript")
     public void preencherSenhaJavaScript(String senha){
         loginPage.preencherSenhaJavaScript(senha);
     }
-
-    @Step("Clicar em 'Login'")
+    @Step("Login: Clicar em Login utilizando javascript")
     public void clicarEmLoginJavaScript(){
         loginPage.clicarEmLoginJavaScript();
     }
 
+
+    //Retornos da pagina
+    @Step("Login: Retorna mensagem de erro")
+    public String retornaMensagemDeErro(){
+        return loginPage.retornaMensagemDeErro();
+    }
 
 }

@@ -4,50 +4,20 @@ import br.com.serenitybddtemplate.steps.CriarProjetoSteps;
 import br.com.serenitybddtemplate.steps.CriarTarefaSteps;
 import br.com.serenitybddtemplate.steps.GerenciarProjetosSteps;
 import br.com.serenitybddtemplate.steps.MainSteps;
-import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
-
-import java.util.List;
-import java.util.Map;
-
 import static br.com.serenitybddtemplate.utils.GeraNomesAleatoriosUtils.gerarNumeros;
 
 public class GerenciarCategoriasGlobaisStepDefinitions {
-    @Steps
-    CriarProjetoSteps criarProjetoSteps;
-
-    @Steps
-    MainSteps mainSteps;
 
     @Steps
     GerenciarProjetosSteps gerenciarProjetosSteps;
 
-    @Steps
-    CriarTarefaSteps criarTarefaSteps;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @And("^preencho o nome da categoria global '(.*)'$")
     public void adicionarCategoriaGlobal(String nome) {
-
         String nomeCategoriaGlobal = "";
         if(nome.equals("Aleatorio")){
             nomeCategoriaGlobal = "Categ " + gerarNumeros();
@@ -58,13 +28,10 @@ public class GerenciarCategoriasGlobaisStepDefinitions {
         }
         Serenity.setSessionVariable("Categoria Global").to(nomeCategoriaGlobal);
         gerenciarProjetosSteps.preencherNomeCategoriaGlobal(nomeCategoriaGlobal);
-
     }
-
 
     @And("^preencho o nome da categoria global '(.*)' no campo da edição do projeto$")
     public void adicionarCategoriaGlobalNaEdicaoDoProj(String nome) {
-
         String nomeCategoriaGlobal = "";
         if(nome.equals("Aleatorio")){
             nomeCategoriaGlobal = "Categ " + gerarNumeros();
@@ -73,61 +40,41 @@ public class GerenciarCategoriasGlobaisStepDefinitions {
         }
         Serenity.setSessionVariable("Categoria Global").to(nomeCategoriaGlobal);
         gerenciarProjetosSteps.preencherNomeCategoriaGlobalEditProj(nomeCategoriaGlobal);
-
     }
-
 
     @And("^clico em adicionar Categoria Global$")
     public void clicarEmAdicionarCategoria() {
-
-
-
-
         gerenciarProjetosSteps.clicarEmAdicionarCategoria();
-
     }
+
     @And("^clico em adicionar e Editar Categoria Global$")
     public void clicarEmAdicionarEEditarCategoria() {
         gerenciarProjetosSteps.clicarEmAdicionarEEditarCategoria();
-
     }
 
-    @And("^Sistema vai para tela de alteração da Categoria Global$")
+    @And("^sistema vai para tela de alteração da Categoria Global$")
     public void retornarNomeCategoriaGlobalEmAlterar() {
-
-
         Assert.assertEquals("Alterar Categoria do Projeto" ,gerenciarProjetosSteps.retornarTelaAterarCategoriaGlobal());
     }
 
     @And("^Apago a categoria global criada$")
     public void apagarCategoriaGlobal() {
         gerenciarProjetosSteps.apagarCategoriaGlobal();
-
     }
 
-    @Then("Sistema apresenta mensagem de erro ao criar Categoria devido '(.*)'")
+    @Then("sistema apresenta mensagem de erro ao criar Categoria devido '(.*)'")
     public void retornarMensagemApagarContaDeUsuario(String msg) {
-
         Assert.assertEquals(msg,gerenciarProjetosSteps.retornaErroCategoriaGlobal());
-
     }
 
     @Then("seleciono o usuario '(.*)' na atribuição da Categoria Global")
     public void selecionarUsuarioCategoriaGlobal(String usuario) {
-
         gerenciarProjetosSteps.selecionarUsuarioCategoriaGlobal(usuario);
-
     }
 
-    @Then("Atualizo a Categoria Global")
+    @Then("atualizo a Categoria Global")
     public void clicarAtualizarCategoria() {
-
         gerenciarProjetosSteps.clicarAtualizarCategoria();
-
     }
-
-
-
-
 
 }

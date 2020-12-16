@@ -13,16 +13,11 @@ public class GerenciarCamposPersonalizadosPage extends PageBase {
     //Mapping
 
 
-    //menus
-
     By nomeCampoPersonalizadoField = By.name("name");
     By criarNovoCampoPersonalizadoButton = By.xpath("//input[@value='Novo Campo Personalizado']");
     By cliqueAquiParaProsseguirButton = By.linkText("Clique aqui para prosseguir");
-
-
-
+    //retornos da pagina
     By primeiraLinhaCampoPersonalizadoTextArea = By.xpath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/table/tbody/tr/td[1]/a");
-
     //Alterar Campo Personalizado
     By tipoCombobox = By.id("custom-field-type");
     By valoresPossiveisField = By.id("custom-field-possible-values");
@@ -41,23 +36,13 @@ public class GerenciarCamposPersonalizadosPage extends PageBase {
     By requeridoAoAtualizacaoCheckbox = By.id("//form[@id='manage-custom-field-update-form']/div/div[2]/div/div/table/tbody/tr[16]/td[2]/label/span");
     By requeridoAoResolucaoCheckbox = By.id("//form[@id='manage-custom-field-update-form']/div/div[2]/div/div/table/tbody/tr[17]/td[2]/label/span");
     By requeridoAoFechamentoCheckbox = By.id("//form[@id='manage-custom-field-update-form']/div/div[2]/div/div/table/tbody/tr[18]/td[2]/label/span");
-
     By atualizaCampoPersonalizadoButton = By.xpath("//input[@value='Atualizar Campo Personalizado']");
     By projetoCriado1Button = By.id("//*[@id='custom-field-project-id']/option[1]");
     By vincularCampoPersonalizadoButton = By.linkText("Vincular Campo Personalizado");
-
-
     By ApagarCampoPersonalizadoButton = By.xpath("//input[@value='Apagar Campo Personalizado']");
-
-
-
     By ApagarCampoButton = By.xpath("//input[@value='Apagar Campo']");
 
-
-
-
     //Actions
-
 
     public void preencherNomeCampoPersonalizado(String nome){
         sendKeys(nomeCampoPersonalizadoField,nome);
@@ -68,12 +53,10 @@ public class GerenciarCamposPersonalizadosPage extends PageBase {
     public void cliqueAquiParaProsseguir(){
         click(cliqueAquiParaProsseguirButton);
     }
-
+    //retornos da pagina
     public String retornaPrimeiraLinhaCampoPersonalizado(){
         return getText(primeiraLinhaCampoPersonalizadoTextArea);
     }
-
-
     //Alterar Campo Personalizado
     public void selecionarTipo(String tipo){
         comboBoxSelectByVisibleText(tipoCombobox,tipo);
@@ -126,36 +109,20 @@ public class GerenciarCamposPersonalizadosPage extends PageBase {
     public void marcarRequeridoAoFechamento(){
         click(requeridoAoFechamentoCheckbox);
     }
-
     public void marcarProjetoCriado1(){
         click(projetoCriado1Button);
     }
     public void marcarVincularCampoPersonalizado(){
         click(vincularCampoPersonalizadoButton);
     }
-
-
     public void clicarAtualizaCampoPersonalizado(){
         click(atualizaCampoPersonalizadoButton);
-
     }
-
     public void clicarApagarCampoPersonalizado(){
         click(ApagarCampoPersonalizadoButton);
-
-
     }
-
     public void clicarApagarCampo(){
         click(ApagarCampoButton);
-
-
     }
-
-
-
-
-
-
 
 }

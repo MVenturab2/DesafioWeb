@@ -1,6 +1,5 @@
 package br.com.serenitybddtemplate.steps;
 
-import br.com.serenitybddtemplate.pages.MainPage;
 import br.com.serenitybddtemplate.pages.VerTarefasPage;
 import net.thucydides.core.annotations.Step;
 
@@ -23,19 +22,14 @@ public class VerTarefasSteps {
     public void clicarResumo(){
         verTarefasPage.clicarResumo();
     }
-
-
     @Step("Ver tarefas: retornar ID Da Tarefa TextArea")
     public String retornarIDDaTarefaTextArea(){
         return verTarefasPage.retornarIDDaTarefaTextArea();
     }
-
     @Step("Ver tarefas: verifico Tarefa Criado")
     public boolean verificoTarefaCriado(String idTarefa){
         return verTarefasPage.verificoTarefaCriado(idTarefa);
     }
-
-
     @Step("Ver tarefas: definir Relacao Da Tarefa")
     public void definirRelacaoDaTarefa( String relacionamento){
         verTarefasPage.definirRelacaoDaTarefa(relacionamento);
@@ -48,23 +42,14 @@ public class VerTarefasSteps {
     public void adicionarRelacionamentoDeTarefas( ){
         verTarefasPage.adicionarRelacionamentoDeTarefas();
     }
-
     @Step("Ver tarefas: clicar Em Criar Clone")
     public void clicarEmCriarClone( ){
         verTarefasPage.clicarEmCriarClone();
     }
-
     @Step("Ver tarefas: clicar Em Fechar Tarefa")
     public void clicarEmFecharTarefa( ){
         verTarefasPage.clicarEmFecharTarefa();
     }
-
-
-
-
-
-
-
     @Step("Ver tarefas: selecionar Resolucao")
     public void selecionarResolucao(String resolucao ){
         verTarefasPage.selecionarResolucao(resolucao);
@@ -85,8 +70,6 @@ public class VerTarefasSteps {
     public void preencherAnotacao(String anotacao ){
         verTarefasPage.preencherAnotacao(anotacao);
     }
-
-
     @Step("Ver tarefas: clicar Em Confirmar Fechar Tarefa")
     public void clicarEmConfirmarFecharTarefa( ){
         verTarefasPage.clicarEmConfirmarFecharTarefa();
@@ -95,6 +78,4 @@ public class VerTarefasSteps {
     public String retornarEstado( ){
         return verTarefasPage.retornarEstado();
     }
-
-
 }
