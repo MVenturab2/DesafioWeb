@@ -13,7 +13,7 @@ Feature: Gerenciar Categorias Globais
     Examples:
       | nome        |
       | Aleatorio   |
-      | categTest   |
+      | Aleatorio   |
 
   Scenario: Crio e edito uma nova categoria global em um projeto em edição
     And clico em criar novo projeto
