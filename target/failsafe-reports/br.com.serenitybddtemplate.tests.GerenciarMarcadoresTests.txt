@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.serenitybddtemplate.tests.GerenciarMarcadoresTests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.13 s - in br.com.serenitybddtemplate.tests.GerenciarMarcadoresTests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.192 s - in br.com.serenitybddtemplate.tests.GerenciarMarcadoresTests
