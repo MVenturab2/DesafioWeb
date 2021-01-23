@@ -31,11 +31,9 @@ public class GeneralHooks {
         loginSteps.abrirMantis();
     }
 
-
     @After
     public void afterScenario(){
         //código a ser executado depois de cada cenário
-
         loginSteps.executeQuery("limpaBase.sql");
         loginSteps.quitDriver();
     }
