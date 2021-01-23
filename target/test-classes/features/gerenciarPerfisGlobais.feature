@@ -16,6 +16,10 @@ Feature: Gerenciar Perfis Globais
       | Plataforma | SO        | Versão SO | Descrição Adicional    |
       | Aleatorio  | Aleatorio | Aleatorio | teste de perfil global |
     Then sistema retorna a situação do perfil como 'true'
+    And preencho os detalhes de criar Perfil Global:
+      | Plataforma | SO        | Versão SO | Descrição Adicional    |
+      | Aleatorio  | Aleatorio | Aleatorio | teste de perfil global |
+    Then sistema retorna a situação do perfil como 'true'
     When seleciono perfil global
     And envio comando para apagar o perfil
     Then sistema retorna a situação do perfil como 'false'

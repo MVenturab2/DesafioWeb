@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Gerenciar Perfis Globais" skipped="0" tests="2" time="32.59" timestamp="2020-12-15 09:46:18"><testcase name="Crio um novo Perfil Global"/><testcase name="Apagar Perfil Global"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Gerenciar Perfis Globais" skipped="0" tests="2" time="40.05" timestamp="2021-01-23 07:00:04"><testcase name="Crio um novo Perfil Global"/><testcase name="Apagar Perfil Global"/></testsuite>

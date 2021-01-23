@@ -27,6 +27,7 @@ public class GeneralHooks {
     @Before(order = 0, value = {"not @query"})
     public void beforeScenariologin(){
         //código a ser executado antes de cada cenário
+        loginSteps.executeQuery("cargaInicial.sql");
         loginSteps.abrirMantis();
     }
 
@@ -34,5 +35,8 @@ public class GeneralHooks {
     @After
     public void afterScenario(){
         //código a ser executado depois de cada cenário
+
+        loginSteps.executeQuery("limpaBase.sql");
+        loginSteps.quitDriver();
     }
 }

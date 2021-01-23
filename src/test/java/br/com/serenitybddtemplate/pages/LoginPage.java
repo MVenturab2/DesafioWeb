@@ -19,6 +19,9 @@ public class LoginPage extends PageBase {
 
     By mensagemErroTextArea = By.xpath("//*[@id='main-container']/div/div/div/div/div[4]/p");
 
+    public void quitDriver(){
+        driver.quit();
+    }
 
     //Actions
     public void preenhcerUsuario(String usuario){

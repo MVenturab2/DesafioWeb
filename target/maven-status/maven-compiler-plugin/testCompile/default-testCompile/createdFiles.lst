@@ -19,13 +19,11 @@ br\com\serenitybddtemplate\tests\LoginTests.class
 br\com\serenitybddtemplate\dbsteps\UsersDBSteps.class
 br\com\serenitybddtemplate\stepdefinitions\GerenciarCategoriasGlobaisStepDefinitions.class
 br\com\serenitybddtemplate\steps\MinhaVisaoSteps.class
-br\com\serenitybddtemplate\tests\ZerarBancoTests.class
 br\com\serenitybddtemplate\stepdefinitions\NavegarAbasMenuStepDefinitions.class
 br\com\serenitybddtemplate\steps\GerenciarUsuariosSteps.class
 br\com\serenitybddtemplate\tests\GerenciarCamposPersonalizadosTests.class
 br\com\serenitybddtemplate\utils\GeneralUtils.class
 br\com\serenitybddtemplate\pages\CriarUsuarioPage.class
-br\com\serenitybddtemplate\tests\adicionarCargaInicialTests.class
 br\com\serenitybddtemplate\bases\PageBase.class
 br\com\serenitybddtemplate\stepdefinitions\GerenciarUsuariosStepDefinitions.class
 br\com\serenitybddtemplate\tests\NavegarAbasMenuTests.class
@@ -42,7 +40,6 @@ br\com\serenitybddtemplate\steps\CriarUsuarioSteps.class
 br\com\serenitybddtemplate\pages\GerenciarPage.class
 br\com\serenitybddtemplate\steps\CriarTarefaSteps.class
 br\com\serenitybddtemplate\pages\GerenciarMarcadoresPage.class
-br\com\serenitybddtemplate\stepdefinitions\ZerarBancoStepDefinitions.class
 br\com\serenitybddtemplate\stepdefinitions\GerenciarPerfisGlobaisStepDefinitions.class
 br\com\serenitybddtemplate\steps\CriarProjetoSteps.class
 br\com\serenitybddtemplate\tests\GerenciarUsuariosTests.class

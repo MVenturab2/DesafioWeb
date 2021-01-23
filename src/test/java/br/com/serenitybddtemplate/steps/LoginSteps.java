@@ -1,17 +1,35 @@
 package br.com.serenitybddtemplate.steps;
 
+import br.com.serenitybddtemplate.dbsteps.UsersDBSteps;
 import br.com.serenitybddtemplate.pages.LoginPage;
 import net.thucydides.core.annotations.Step;
+import net.thucydides.core.annotations.Steps;
 
 public class LoginSteps {
 
     LoginPage loginPage;
+
+    @Steps
+    UsersDBSteps usersDBSteps;
+
+
+    @Step("Login: Executar querys")
+    public void executeQuery(String query){
+        usersDBSteps.executaQuery(query);
+    }
 
     //Abrir navagador
     @Step("Login: Abrir Mantis")
     public void abrirMantis(){
         loginPage.open();
     }
+    @Step("Login: Abrir Mantis")
+    public void quitDriver(){
+        loginPage.quitDriver();
+    }
+
+
+
 
     //Login
     @Step("Login: Preencher usuário com '{0}'")
