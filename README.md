@@ -88,11 +88,20 @@ Podendo ser acessado no primeiro caso como artefato de cada execução e no segu
 D:\JOB\desafiomat\target\site\serenity
 
 
+https://lh4.googleusercontent.com/TYO3SYVW3GHTlcFPxk4j1IArATyU_2sqlRRuyAZJ552636LH44tF5ETD7G0hOzsf69-QXZo5r41A3ADer6tUkMctzWgGFrU0D14IBrg
 
+https://lh3.googleusercontent.com/Hl-PCIHZuEBcn-T81ohkjtcdB5LHCWA8qeRNhR5TYXZKnemh7bAYdLNmG962-aVYo9DRpIRA0my7qZ0ovTjTaL9TMmpBYnpj5avPtw0S
 
+https://lh6.googleusercontent.com/WDcsI_7T7euan-vocM4ULXEHK-SVz3NgAM5RKDCQr0tdKoDufBhXMWmbuIsN3eTU43wTIzd4i9mGxAlUY1y914uQJhnGFLW7XkYftXr9
 
-https://lh3.googleusercontent.com/RioCBxcTBpXKxoXHruALkA-MhcUI0AU78-DmCN0zrIioy1_XsevWZR6wv_3Hz3BOI_iKXWZUDfVFekRz6WS1Vx6jOj9pQFGJ4cXHuy6J
+https://lh5.googleusercontent.com/niFt2kFQ-mXdubHS7ltrOYKJ32xfvS24GzTVbK66Y_yaU9ZCO7JMUgZyRmtSxqm7Yst7yEUF7gJK2PwrKQ7c9VN8mGmd741NUOX16Jtr
 
+https://lh4.googleusercontent.com/QIJygByayS3-E57cJ45-4s6U8Xri9f6Tv5iyA8ReHKF2CCzZ9asGF82rhSlgqAxRltVW68iNRhSxNqJCK4ZSkt8d4BohU-RcLpcYcABT
+
+https://lh6.googleusercontent.com/wlzVbVnxSBQbLypvV4COX47f5d226d1jrkP4WwujdlAydVj2WVhxHW8FLO56DQXGWoBrQCGGFG4bssOnKUDIau88r2LLl1fE3W3UpJV3
+
+Relatorio de exemplo:
+https://dev.azure.com/matheusventura0517/Desafio%20de%20automacao%20Web/_build/results?buildId=54&view=artifacts&pathAsName=false&type=publishedArtifacts
 
 
 7. Conexao com o banco de dados.
@@ -142,3 +151,10 @@ Criar um pipeline com as tasks de execução e informar o agent
 https://lh4.googleusercontent.com/VaJZbIbjHqC11RY1liVvIuFeORy91jY3UA7-aqrKfsQBnDdtGjMs0NfLTmkOYqR4SPsSiZO0VST7bjs5Kou556u8-tx5ldA6TMDl69b1bYSz8CRJyLzsaih3UHejQsbmv3wig0aA
 
 https://lh4.googleusercontent.com/CoqWOPDExxnSLpU647cXJ1hwfj-WBMC7wVKxqdcSzDBhOWHiBxPqL3uqu_oAz-dd0Gl9YC4c641Hd_k6XUsHYuV2U54Ttw3c3QJfZJBp
+
+
+Pipeline disponivel para execução:
+https://dev.azure.com/matheusventura0517/Desafio%20de%20automacao%20Web/_build?definitionId=10
+
+Obs: O agente desse pipeline foi minha maquina local, para execução por ele é necessario que eu ative o agente em minha maquina.
+
