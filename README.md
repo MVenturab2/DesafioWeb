@@ -31,6 +31,10 @@ Seguir o seguinte tutorial para instalar o xampp e o mantis.
 
 https://www.tutorialspoint.com/mantis/mantis_installation.htm
 
+Meu ambiente o mantis ficou configurado no:
+C:\xampp\htdocs\mantis
+http://localhost/mantis/
+
 
 2. 50 Scripts
 
@@ -55,24 +59,46 @@ https://lh3.googleusercontent.com/5cCrYDm5fQFELpnkkjZulhFpnyYEF9O8o2WiOfzgeK-AI7
 4. Selenium grid
 
 Configurado no serenity.properties para executar nos navegadores crhome, mozilla e ie
+Os drivers ficaram armazenados no:
+
+D:/JOB/desafiomat/src/test/resources/driver/
+
+Para alterações referente ao navegador que irá executar os testes será necessario alterar no arquivo serenity.properties os seguintes paramentros com o caminho e o driver:
+webdriver.remote.driver 
+webdriver.driver
+webdriver.chrome.driver ou webdriver.gecko.driver ou webdriver.ie.driver=
 
 https://lh4.googleusercontent.com/9OuRTCd93zeOlC2YxW00IhGOvUoz0g9P7_16HichB4XcxBN7fQAk13B4INtaoF9CR9Xczh0YRo6sZPQhKNGCJt1guw9nSA0jun-_MaEkkVpVnBaKfzR1GC3azCtqImOHKMXnWCEr
 
 5. Screenshots
 
 Foi configurado no relatorio do serenity prints para cada passo.
+Adicionado no serenity.properties parametro para que o print seja de cada passo:
+serenity.take.screenshots=AFTER_EACH_STEP
 
 https://lh6.googleusercontent.com/EQswkQ_MzKyiPdBDn9qoXsU0I3Ep2omvPzjC2_086isgBu9gaCiPJ1he8wG1HC-BDlJHGF-prILet1QBcozzSJJmcDz_jnuCDG1rm_PrORxrKvCBqGRpNQOkEZcgOZsj8bsGv2gV
 
 6. Report de execução
 
 Relatorio do Serenity disponivel
+O relatorio é gerado quando é executado pelo azure ou quando pela IDE é executado atraves do comando no terminal:
+mvn clean install
+
+Podendo ser acessado no primeiro caso como artefato de cada execução e no segundo caso abrindo o arquivo index no seguinte caminho:
+D:\JOB\desafiomat\target\site\serenity
+
+
+
+
 
 https://lh3.googleusercontent.com/RioCBxcTBpXKxoXHruALkA-MhcUI0AU78-DmCN0zrIioy1_XsevWZR6wv_3Hz3BOI_iKXWZUDfVFekRz6WS1Vx6jOj9pQFGJ4cXHuy6J
 
+
+
 7. Conexao com o banco de dados.
 
-Configurado script para zerar a base mysql
+Configurado script para zerar a base mysql e um para dar a carga inicial.
+Os scripts são chamados no hooks no inicio e no fim de cada execução.
 
 
 8. Java Script em uso
